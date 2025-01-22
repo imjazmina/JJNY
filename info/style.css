@@ -1,0 +1,75 @@
+
+body{
+    font-family: sans-serif;
+    background: #fff;
+    background-attachment: fixed;
+}
+/*
+Display: flex hace que los elementos esten en cuadritos uno a lado de otro que se adaptan a la pantalla y permiten controlar de manera mas facil la direccion, el tamaño espaciado, etc (si quitas quedan uno sobre otro y es feo ekisde)
+align es alinear nomas para que queden en el medio de sus respectivos cuadritos imaginarios
+*/
+.navbar{
+        display: flex;
+        align-items: center;
+}
+/*
+Flex grow, ya que al hacerle flex a los elementos se hico un item flex hace que el elemento crezca para ocupar el lugar de la pantalla 
+y el text aling alinea el texto osease los elementos a la derecha
+*/
+nav{
+    flex-grow: 1;
+    text-align: right;
+}
+/* in line block hace que cada uno tenga su bloquecito propio uno a lado de otro en vez de uno encima de otro y los margenes a la derecha hacen que esten separados y no pegados*/
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+/*la decoracion le quita lo subrayado y eso ya que son links y el color inesperadamente le cambia el color*/
+a{
+    text-decoration: none;
+    color: #555;
+}
+/*Igual que el anterior*/
+p{
+    color: #555;
+}
+/*en este container, es basicamente para que todo tenga su distancia en los bordes y no se pegue a la pared
+el max width limita el tamaño de los objetos para que no sean cuadros gigantes que llenen la pantalla el margin pone un pargen automaticamente y los padding espacian a la izq y derecha*/
+.container{
+    border-radius: 50px;
+    max-width: 900px;
+    margin: auto;
+    align-items: center; 
+    justify-content: center;
+    
+}
+/*lo mismo de hace rato
+flex para que esten en cuadritos uno a lado de otro
+y alinear para que los elementos esten centrados en la pantalla osease igual altura y eso  
+*/
+
+/*es para que al subir el mouse cambie su color*/
+nav :hover{
+    color: #000000fe;
+}
+
+
+.info img{
+    max-width: 200px;
+    padding-left:38%;
+    
+}
+
+.btn{
+    display: flex;
+    background: #000000fe;
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 30px;
+    transition: background 0.5s;
+    justify-content: center;
+}
+.btn:hover{
+    background: #000000fe;
+}

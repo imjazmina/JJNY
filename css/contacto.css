@@ -1,0 +1,83 @@
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+/*same here*/
+p{
+    color: #555;
+}
+/*todo nuestro body esta en este container, es basicamente para que todo tenga su distancia en los bordes y no se pegue a la pared
+el max width limita el tamaño de los objetos para que no sean cuadros gigantes que llenen la pantalla el margin pone un pargen automaticamente y los padding espacian a la izq y derecha*/
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+/*lo mismo de hace rato
+flex para que esten en cuadritos uno a lado de otro
+y alinear para que los elementos esten centrados en la pantalla osease igual altura y eso  
+*/
+
+/*es para que al subir el mouse cambie su color*/
+nav :hover{
+    color: #000000fe;
+}
+
+  .contact-box {
+    width: 300px;
+    height: 300px;
+    background: transparent;
+    color: #000;
+    top: 50% ;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+  }
+
+  .contact-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .contact-box input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .contact-box input[type="nombre"], .contact-box input[type="comentario"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+  }
+  
+  .contact-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #000000fe;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .contact-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #022458fe;
+  }
+  
+  .contact-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+  .contact-box a:hover {
+    color: #000000fe;
+  }

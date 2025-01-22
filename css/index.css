@@ -1,0 +1,66 @@
+
+
+/*imagen del negocio
+.key{
+    height: 500px;
+    background: center / cover no-repeat url(../images/img-ropa.jpg);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family:'Noto Serif',Serif;
+}
+*/
+/*todo nuestro body esta en este container, es basicamente para que todo tenga su distancia en los bordes y no se pegue a la pared
+el max width limita el tamaño de los objetos para que no sean cuadros gigantes que llenen la pantalla el margin pone un pargen automaticamente*/
+.container{
+    border-radius: 50px;
+    max-width: 1000px;
+    margin: auto;
+    align-items: center; 
+    justify-content: center;
+}
+/*
+flex para que esten en cuadritos uno a lado de otro
+y alinear para que los elementos esten centrados en la pantalla osease igual altura y eso  
+*/
+.cuerpo{
+    display: flex;
+    align-items: center;
+}
+/*flex-basis especifíca la base flexible, la cual es el tamaño inicial de un elemento flexible. Ésta propiedad determina el tamaño de una caja de contenidos*/
+.col{
+    flex-basis: 50%;
+
+}
+/*pading hacia arriba de 50px*/
+.col img{
+    max-width: 100%;
+    padding: 50px;
+}
+/*line height para separar las letras havia arriba*/
+.col h1{
+    font-size: 60px;
+    line-height: 60px;
+}
+/*nos permite mostrar en un bloque que podemos controlar */
+.btn{
+    display: inline-block;
+    background: #000000cb;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.cuerpo{
+    margin-top: 0;
+}
+/*es para que al subir el mouse cambie su color*/
+nav :hover{
+    color: #000000fe;
+}
+/*x2 pero con el background color*/
+.btn:hover{
+    background: #000000fe;
+}
+
