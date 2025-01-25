@@ -13,28 +13,24 @@ body{
     margin-right: 4.9%;
     font-family: sans-serif;
     background: #fff;
-    background-attachment: fixed;
+    background-attachment: fixed;//fija la imagen
     
 }
 
 /*nav*/
-.logo{
-    align-items: center;
+.logo img{
+    width: 120px;
     display: flex;
-    width: 100px;
+    align-items: center;
 }
 
-.logo img{
-    width: 100%;
-}
 .header_nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     top: 0;
-    border-bottom: 1px solid #f1f1f1;
-    background: #fff;
+    background: black;
     height: 60px;
     width: 100%;
 }
@@ -44,21 +40,42 @@ body{
     align-items: center;
 }
 
-.global_nav_item{
-    color: black;
-    text-decoracion: none;
+.global_nav_item a{
+    color: white;
+    text-decoration: none;
     display: flex;
     align-items: center;
     padding: 0 20px;
 }
-/*fin del nav*/
-a{
-    text-decoration: none;
-    color: #555;
+
+.global_nav_item:hover{
+    background: #fff;
+    color: #000;
+    transition: 0.3s;
 }
 
-p{
-    color: #555;
+.key {
+    height: 400px;
+    background: center / cover no-repeat url(https://i.pinimg.com/736x/6b/19/c2/6b19c26e4cd2ec49bca3676fa4302fc9.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+/*fin del nav*/
+.concept-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-inner{
+    padding: 50px 10% 30px;
+}
+
+.section_title{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
 }
 /*todo nuestro body esta en este container, es basicamente para que todo tenga su distancia en los bordes y no se pegue a la pared
 el max width limita el tamaño de los objetos para que no sean cuadros gigantes que llenen la pantalla el margin pone un pargen automaticamente y los padding espacian a la izq y derecha*/
@@ -92,12 +109,6 @@ img{
     max-width: 100%;
 }
 
-/* Header */
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 0 40px 0;
-}
 
 .container-icon{
     position: relative;
