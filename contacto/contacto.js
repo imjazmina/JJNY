@@ -4,14 +4,13 @@ const comentario = document.getElementById("comentario")
 const form = document.getElementById("form")
 
 form.addEventListener("submit", e=>{
-    e.preventDefault()
+    e.preventDefault();
     verificacion();
 })
 
 function verificacion(){
     if((nombre.value == '')||(celular.value == '')||(comentario.value == '')){
-            alert("Campos incompletos")
-            
+            alert("Campos incompletos")   
         }
         else{
             alert("Comentario enviadio. Gracias por comunicarse con nosotros :)")
